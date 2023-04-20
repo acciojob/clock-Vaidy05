@@ -1,6 +1,7 @@
 //your JS code here. If required.
+function clock(){
 let date = new Date();
-
-setInterval("function(){
-	document.getElementById("timer").innerHTML=date.toLocaleString();
-}",1000)
+document.getElementById("timer").innerHTML=date.toLocaleString();
+	setTimeout("clock()",1000);
+}
+clock();
